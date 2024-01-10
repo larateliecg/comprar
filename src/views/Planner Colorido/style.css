@@ -16,12 +16,6 @@ header{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    position: fixed;
-    z-index: 0;
-}
-
-main{
-    margin-top: 14vh;
 }
 
 #info{
@@ -42,9 +36,23 @@ header img{
     padding-left: 20px;
 }
 
-button{
-    width: 200px;
-    height: 40px;
+main{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#product-data{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+
+#product-data button{
+    width: 300px;
+    height: 60px;
     border: none;
     background-color: black;
     border-radius: 15px;
@@ -63,60 +71,116 @@ button{
     touch-action: manipulation;
 }
 
-button:hover{
+#product-data button:hover{
     background-color: rgb(54, 54, 54);
     animation: 5s ease-in-out;
 }
 
-#welcome{
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+h1{
+    font-size: xx-large;
 }
 
-#mvp{
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-#mvp img{
+#image img{
     border-radius: 30px;
-    height: 48vh;
-    width: 48vh;
 }
 
-.valuable{
-    width: 90%;
+select{
+    border: none;
+    background-color: #dddddd;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+option{
+    border: none;
+    background-color: #dddddd;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+#main-content{
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#description{
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+
+#information{
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+
+#options-division{
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: rgb(245, 245, 245);
-    border-radius: 30px;
 }
 
-.division{
-    text-align: center;
+#options{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 @media screen and (max-width: 800px) {
-    header{
+    main{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #image{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+    #image img{
+        width: 80vw;
+    }
+
+    #product-data{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        align-items: center;
+        font-size: x-large;
+    }
+
+    #info{
+        text-align: center;
+    }
+    #options select{
+        height: 60px;
+        font-size: large;
+        padding: 5px;
+    }
+    #options{
+        display: flex;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
+    }
+    #main-content{
+        flex-direction: column;
+    }
+    #description{
+        width: 80vw;
+    }
+    #information{
+        width: 80%;
     }
     #info{
         display: none;
     }
-    .valuable{
-        flex-direction: column;
+    header{
+        align-items: center;
+        justify-content: center;
     }
 }

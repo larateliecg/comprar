@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="PT-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,63 +19,48 @@
         </div>
         <div></div>
     </header>
-    <br><br>
     <main>
-        <div id="image">
-            <img src="src/assets/planner.PNG" alt="">
+        <div id="welcome">
+            <h1>Olá! O que você procura hoje?</h1>
+            <br>
+            <h4>Aqui você encontrará tudo de papelaria personalizada!</h4>
         </div>
         <br>
-        <div id="product-data">
-            <h1>Planner Anual 2024</h1>
-            <p id="info">Miolo colorido</p>
+        <hr>
+        <br>
+        <div id="mvp">
+            <h1>Confira os nossos destaques:</h1>
             <br>
-            <h2 id="value-product">R$: 60,00</h2>
-            <p>Pix, à vista ou cartão</p>
-            <br>
-            <div id="options">
-                <div id="options-division">
-                    <select id="sddp" onchange="mudaValor()">
-                        <option value="v1">1 Dia por Página</option>
-                        <option value="v2" selected>2 Dias por Página</option>
-                    </select>
-                    <select id="wireo" onchange="mudaValor()">
-                        <option value="v1" selected>Wire-o Branco</option>
-                        <option value="v2">Wire-o Dourado</option>
-                        <option value="v3">Wire-o Cobre</option>
-                        <option value="v4">Wire-o Rosê</option>
-                    </select>
-                </div>
-                <select id="laminacao" onchange="mudaValor()">
-                    <option value="v1" selected>Laminação Brilho</option>
-                    <option value="v2">Laminação Fosca</option>
-                    <option value="v3">Laminação Holográfica</option>
-                </select>
-                <select id="cantoneira" onchange="mudaValor()">
-                    <option value="v1">Com cantoneira</option>
-                    <option value="v2" selected>Sem cantoneira</option>
+            <div class="valuable">
 
-                </select>
+                <div class="division">
+                    <img src="src/assets/agenda.png" alt="">
+                    <h2>Agendas Personalizadas</h2>
+                    <a id="comprar" href="src/views/Planner Colorido/index.html" target="_blank"><button>Comprar</button></a>
+
+                </div>
+                
+                <div class="division">
+                    <img src="src/assets/devocional.png" alt="">
+                    <h2>Devocionais Cristãs</h2>
+                    <a id="comprar" href="src/views/Planner Colorido/index.html" target="_blank"><button>Comprar</button></a>
+                </div>
             </div>
             <br>
-            <a id="comprar" href="https://wa.me//5583986040644?text=Olá!%20Gostaria%20de%20comprar%20um%20Planner%20personalizado%20com%202%20dias%20por%20página,%20wire-o%20branco,%20laminação%20brilho%20e%20sem%20cantoneira." target="_blank"><button>Comprar</button></a>
+            <div class="valuable">
+                <div class="division">
+                    <img src="src/assets/planner.PNG" alt="">
+                    <h2>Planners Personalizados</h2>
+                    <a id="comprar" href="src/views/Planner Colorido/index.html" target="_blank"><button>Comprar</button></a>
+                    <br>
+                </div>
+                
+                <div class="division">
+                    <img src="src/assets/kit.png" alt="">
+                    <h2>Kits para presente</h2>
+                    <a id="comprar" href="src/views/Planner Colorido/index.html" target="_blank"><button>Comprar</button></a>
+                </div>
+            </div>
         </div>
     </main>
-    <div id="main-content">
-        <div id="description">
-            <h3>Descrição:</h3>
-            <p>Utilizar um planner é uma ferramenta essencial para quem busca organização e produtividade em sua vida. Ele vai muito além de um simples caderno de anotações, pois oferece uma estrutura para planejar metas, tarefas diárias, compromissos e projetos. Ao utilizar um planner, você consegue visualizar de forma clara e detalhada todos os seus afazeres, priorizando-os e distribuindo seu tempo de maneira mais eficiente. Além disso, o ato de escrever fisicamente suas metas e objetivos pode aumentar significativamente as chances de alcançá-los, tornando o planner uma ferramenta poderosa para concretizar sonhos e manter o foco ao longo do tempo.</p>
-        </div>
-        <div id="information">
-            <h3>Informações</h3>
-            <ul>
-                <li>Quantidade de páginas: 150</li>
-                <li>Cor do miolo: colorido</li>
-                <li>Contém bolso? Sim</li>
-                <li>Contém divisórias? Sim</li>
-                <li>Acompanha tassel e penduricalho com inicial do nome do cliente.</li>
-            </ul>
-        </div>
-    </div>
-    <script src="src/controllers/script.js"></script>
 </body>
-</html>
