@@ -119,4 +119,8 @@ button:hover{
     .valuable{
         flex-direction: column;
     }
+    #welcome{
+        text-align: center;
+        width: 100vw;
+    }
 }

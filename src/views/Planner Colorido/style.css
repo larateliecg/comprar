@@ -183,4 +183,11 @@ option{
         align-items: center;
         justify-content: center;
     }
+    #welcome{
+        text-align: center;
+        width: 90vw;
+    }
+    #welcome h1{
+        font-size: medium;
+    }
 }
